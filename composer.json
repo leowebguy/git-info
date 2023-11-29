@@ -1,0 +1,57 @@
+{
+  "name": "leowebguy/git-info",
+  "description": "Output git info over twig",
+  "keywords": [
+    "craftcms",
+    "git",
+    "github",
+    "branch",
+    "commit"
+  ],
+  "version": "1.0.0",
+  "type": "craft-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Leo",
+      "homepage": "https://github.com/leowebguy"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^8.0",
+    "craftcms/cms": "^4.0"
+  },
+  "require-dev": {
+    "craftcms/ecs": "dev-main",
+    "craftcms/phpstan": "dev-main",
+    "craftcms/rector": "dev-main",
+    "laravel/pint": "^v1.10"
+  },
+  "autoload": {
+    "psr-4": {
+      "leowebguy\\gitinfo\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Git Info",
+    "handle": "git-info",
+    "class": "leowebguy\\gitinfo\\Plugin"
+  },
+  "config": {
+    "platform": {
+      "php": "8.1"
+    },
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "craftcms/plugin-installer": true
+    }
+  },
+  "scripts": {
+    "check-cs": "vendor/bin/ecs check src --ansi",
+    "fix-cs": "vendor/bin/ecs check src --ansi --fix",
+    "phpstan": "vendor/bin/phpstan analyse src",
+    "rector": "vendor/bin/rector process src --config vendor/craftcms/rector/sets/craft-cms-40.php"
+  }
+}
