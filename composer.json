@@ -6,7 +6,10 @@
     "git",
     "github",
     "branch",
-    "commit"
+    "commit",
+    "hash",
+    "author",
+    "remote"
   ],
   "version": "1.0.0",
   "type": "craft-plugin",
