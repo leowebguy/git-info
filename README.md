@@ -30,7 +30,7 @@ ddev composer require leowebguy/git-info -w && ddev exec php craft plugin/instal
 `{{ craft.git.commitDate }}` >> last commit date
 
 ```twig
-{% if not g.isprod %}
+{% if not craft.app.config.custom.isProd %}
     <div style="position: fixed; bottom: 1rem; right: 1rem; padding: 6px 10px; text-align: right; border: solid 1px #eee; z-index: 999;">
         {{ 'branch: ' ~ craft.git.branch }}<br>
         {{ 'remote url: ' ~ craft.git.remoteUrl }}<br>
