@@ -42,4 +42,4 @@ ddev composer require leowebguy/git-info -w && ddev exec php craft plugin/instal
 {% endif %}
 ```
 
-![Screenshot](ss1.png)
+![Screenshot](resources/ss1.png)
